@@ -1,0 +1,164 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   ConnectX
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+        .light-mode {
+            background-color: #FAFAFA;
+            color: black;
+        }
+        .dark-mode .sidebar {
+            background-color: #1E1E1E;
+        }
+        .light-mode .sidebar {
+            background-color: white;
+        }
+        .dark-mode .post {
+            background-color: #1E1E1E;
+        }
+        .light-mode .post {
+            background-color: white;
+        }
+        .dark-mode .text-primary {
+            color: #BB86FC;
+        }
+        .light-mode .text-primary {
+            color: #6200EE;
+        }
+  </style>
+ </head>
+ <body class="dark-mode">
+  <div class="flex">
+   <!-- Sidebar -->
+   <div class="sidebar w-1/5 h-screen p-5">
+    <h1 class="text-primary text-2xl font-bold mb-10">
+     ConnectX
+    </h1>
+    <nav class="space-y-4">
+     <a class="flex items-center space-x-2 hover:text-gray-400" href="#">
+      <i class="fas fa-home">
+      </i>
+      <span>
+       Home
+      </span>
+     </a>
+     <a class="flex items-center space-x-2 hover:text-gray-400" href="#">
+      <i class="fas fa-search">
+      </i>
+      <span>
+       Search
+      </span>
+     </a>
+     <a class="flex items-center space-x-2 hover:text-gray-400" href="#">
+      <i class="fas fa-compass">
+      </i>
+      <span>
+       Explore
+      </span>
+     </a>
+     <a class="flex items-center space-x-2 hover:text-gray-400" href="#">
+      <i class="fas fa-video">
+      </i>
+      <span>
+       Reels
+      </span>
+     </a>
+     <a class="flex items-center space-x-2 hover:text-gray-400" href="#">
+      <i class="fas fa-envelope">
+      </i>
+      <span>
+       Messages
+      </span>
+     </a>
+     <a class="flex items-center space-x-2 hover:text-gray-400" href="#">
+      <i class="fas fa-bell">
+      </i>
+      <span>
+       Notifications
+      </span>
+     </a>
+     <a class="flex items-center space-x-2 hover:text-gray-400" href="#">
+      <i class="fas fa-plus-square">
+      </i>
+      <span>
+       Create
+      </span>
+     </a>
+     <a class="flex items-center space-x-2 hover:text-gray-400" href="#">
+      <i class="fas fa-user">
+      </i>
+      <span>
+       Profile
+      </span>
+     </a>
+     <a class="flex items-center space-x-2 hover:text-gray-400 cursor-pointer" id="switch-appearance">
+      <i class="fas fa-adjust">
+      </i>
+      <span>
+       Switch Appearance
+      </span>
+     </a>
+     <a class="flex items-center space-x-2 text-red-600 hover:text-red-800" href="#">
+      <i class="fas fa-sign-out-alt">
+      </i>
+      <span>
+       Logout
+      </span>
+     </a>
+    </nav>
+   </div>
+   <!-- Main Content -->
+   <div class="w-4/5 p-5 overflow-y-auto h-screen">
+    <!-- Stories -->
+    <div class="flex space-x-4 mb-10">
+     <div class="flex flex-col items-center">
+      <div class="rounded-full bg-black border-4 border-primary" style="height: 50px; width: 50px;">
+      </div>
+      <span class="mt-2">
+       user1
+      </span>
+     </div>
+     <div class="flex flex-col items-center">
+      <div class="rounded-full bg-black border-4 border-primary" style="height: 50px; width: 50px;">
+      </div>
+      <span class="mt-2">
+       user2
+      </span>
+     </div>
+     <div class="flex flex-col items-center">
+      <div class="rounded-full bg-black border-4 border-primary" style="height: 50px; width: 50px;">
+      </div>
+      <span class="mt-2">
+       user3
+      </span>
+     </div>
+    </div>
+    <!-- Posts -->
+    <div class="post rounded-lg p-5 mb-10">
+     <div class="rounded-lg bg-gray-500" style="height: 400px; width: 100%;">
+     </div>
+    </div>
+    <div class="post rounded-lg p-5">
+     <div class="rounded-lg bg-gray-500" style="height: 400px; width: 100%;">
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   document.getElementById('switch-appearance').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+        });
+  </script>
+ </body>
+</html>
